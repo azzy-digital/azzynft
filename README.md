@@ -1,66 +1,60 @@
-## Foundry
+AzzyNFT
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+AzzyNFT is a customised ERC-721 Non-Fungible Token (NFT) smart contract developed as part of the TechCrush Web3 Cohort 7 training programme.
 
-Foundry consists of:
+Project Features
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- ERC-721 NFT standard.
+- Custom collection name: AzzyNFT.
+- Collection symbol: AZNFT.
+- NFT minting functionality.
+- Owner-only minting access.
+- Customisable base URI for NFT metadata.
 
-## Documentation
+Technologies Used
 
-https://book.getfoundry.sh/
+- Solidity
+- Foundry
+- OpenZeppelin
+- Remix IDE
+- MetaMask
+- Sepolia Testnet
 
-## Usage
+Smart Contract Information
 
-### Build
+- Contract Name: AzzyNFT
+- Token Standard: ERC-721
+- Network: Sepolia Testnet
+- Token Symbol: AZNFT
 
-```shell
-$ forge build
-```
+Installation
 
-### Test
+Clone the repository:
 
-```shell
-$ forge test
-```
+git clone YOUR_GITHUB_REPOSITORY_URL
 
-### Format
+Navigate into the project:
 
-```shell
-$ forge fmt
-```
+cd azzynft
 
-### Gas Snapshots
+Build
 
-```shell
-$ forge snapshot
-```
+forge build
 
-### Anvil
+Test
 
-```shell
-$ anvil
-```
+forge test -vv
 
-### Deploy
+Deployment
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+The contract was deployed to the Sepolia test network using Remix IDE.
 
-### Cast
+NFT Minting
 
-```shell
-$ cast <subcommand>
-```
+The mint function allows the contract owner to mint NFTs to a specified wallet address.
 
-### Help
+Author
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Azzy
+
+TechCrush Web3 Cohort 7
